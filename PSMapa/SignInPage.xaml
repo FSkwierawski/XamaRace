@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PSMapa.Page2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="0">
+                        <Entry Placeholder="Login" Text="" FontSize="16" x:Name="SingInUserLogin"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <Entry Placeholder="Password" Text="" FontSize="16" x:Name="SinginUserPassword"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2">
+                        <Entry Placeholder="Confirm Password" Text="" FontSize="16" x:Name="SinginUserConfirmPassword"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3">
+                        <Button Text="Sing In" FontSize="16" BackgroundColor="Blue" Clicked="SignIn_Clicked"/>
+                    </StackLayout>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

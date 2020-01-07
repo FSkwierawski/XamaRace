@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WorkingWithMaps.ViewModels"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="PSMapa.PlayingPage"
+             Title="PlayingPage"
+             IconImageSource="glyphish_07_map_marker.png">
+    <!--    <ContentPage.Resources>
+                 xmlns:local="clr-namespace:WorkingWithMaps"
+        <local:MapItemTemplateSelector x:Key="MapItemTemplateSelector">
+            <local:MapItemTemplateSelector.DefaultTemplate>
+                <DataTemplate>
+                    <maps:Pin Position="{Binding Position}"
+                              Address="{Binding Address}"
+                              Label="{Binding Description}" />
+                </DataTemplate>
+            </local:MapItemTemplateSelector.DefaultTemplate>
+            <local:MapItemTemplateSelector.XamarinTemplate>
+                <DataTemplate>
+                    <maps:Pin Position="{Binding Position}"
+                              Address="{Binding Address}"
+                              Label="Xamarin!" />
+                </DataTemplate>
+            </local:MapItemTemplateSelector.XamarinTemplate>    
+        </local:MapItemTemplateSelector>
+    </ContentPage.Resources>-->
+
+    <Grid Margin="10,35,10,10">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto"
+                           />
+        </Grid.RowDefinitions>
+        <maps:Map x:Name="map" Grid.Row="0" Grid.RowSpan="7"
+                  MapClicked="OnMapClicked"
+                  ItemsSource="{Binding Locations}"
+                  BackgroundColor="blue"
+                  >
+
+            <!-- Alternatively, set ItemTemplateSelector to MapItemTemplateSelector -->
+            <maps:Map.ItemTemplate>
+                <DataTemplate>
+                    <maps:Pin Position="{Binding Position}"
+                              Address="{Binding Address}"
+                              Label="{Binding Description}"/>
+                </DataTemplate>
+            </maps:Map.ItemTemplate>
+        </maps:Map>
+        
+        <ScrollView Grid.Row="9"
+                    Orientation="Horizontal">
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+
+                <Button Text="Start" x:Name="StartBtn"
+                         Clicked="StartBtn_Clicked"/>
+                <!--<Button Text="Download map"
+                         Clicked="DownloadMap_Clicked" x:Name="DownloadMapBtn"/>-->
+                <Button Text="Leave"
+                         Clicked="LeaveGame_Clicked"/>
+                <Button Text="Maps list" x:Name="MapsListBtn"
+                        Clicked="MapslistBtn" />
+                <Button Text="Send result" x:Name="SendResultBtn"
+                        Clicked="SendResultBtn_Clicked" />
+                <!-- <Button Text="Geo" x:Name="GeoLocalisation" 
+                         Clicked="GeoLocalisation_Clicked"/> -->
+
+            </StackLayout>
+        </ScrollView>
+
+        <ScrollView Grid.Row="7">
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+                <Label Text="Map name" HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" FontSize="25" x:Name="MapNametxt"/>
+            </StackLayout>
+        </ScrollView>
+        
+        <ScrollView Grid.Row="8"
+                    Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+                <Label Text="Clock" FontSize="36" x:Name="Clocktxt" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

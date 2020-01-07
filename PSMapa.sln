@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSMapa.Android", "PSMapa.Android\PSMapa.Android.csproj", "{99A48552-9D28-4730-8F84-6AEF943C0B29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSMapa", "PSMapa\PSMapa.csproj", "{50BBC5F0-68A1-4409-AD6E-EBD50DA50847}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99A48552-9D28-4730-8F84-6AEF943C0B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A48552-9D28-4730-8F84-6AEF943C0B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A48552-9D28-4730-8F84-6AEF943C0B29}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{99A48552-9D28-4730-8F84-6AEF943C0B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A48552-9D28-4730-8F84-6AEF943C0B29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A48552-9D28-4730-8F84-6AEF943C0B29}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{50BBC5F0-68A1-4409-AD6E-EBD50DA50847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BBC5F0-68A1-4409-AD6E-EBD50DA50847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BBC5F0-68A1-4409-AD6E-EBD50DA50847}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{50BBC5F0-68A1-4409-AD6E-EBD50DA50847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BBC5F0-68A1-4409-AD6E-EBD50DA50847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BBC5F0-68A1-4409-AD6E-EBD50DA50847}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {480B0179-2D95-4A24-8A9F-A4E8AAB42B19}
+	EndGlobalSection
+EndGlobal
