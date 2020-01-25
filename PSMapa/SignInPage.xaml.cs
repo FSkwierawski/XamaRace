@@ -40,7 +40,7 @@ namespace PSMapa
             {
                 try
                 {
-                    Uri uriaddress = new Uri("https://10.0.2.2:44353/v1/Accounts/Register");
+                    Uri uriaddress = new Uri("https://xamaracing.azurewebsites.net/v1/Accounts/Register");
                     var content = JsonConvert.SerializeObject(Registration);
                     var data = new StringContent(content, Encoding.UTF8, "application/json");
                     var response = await client.PostAsync(uriaddress, data);

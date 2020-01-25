@@ -16,3 +16,5 @@ C:\Users\fifi9\source\repos\PSMapa\PSMapa\obj\Debug\netstandard2.0\PlayingPage.x
 C:\Users\fifi9\source\repos\PSMapa\PSMapa\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\fifi9\source\repos\PSMapa\PSMapa\obj\Debug\netstandard2.0\MapsList.xaml.g.cs
 C:\Users\fifi9\source\repos\PSMapa\PSMapa\obj\Debug\netstandard2.0\PSMapa.csprojAssemblyReference.cache
+C:\Users\fifi9\source\repos\PSMapa\PSMapa\obj\Debug\netstandard2.0\RankingPage.xaml.g.cs
+C:\Users\fifi9\source\repos\PSMapa\PSMapa\obj\Debug\netstandard2.0\MapRankingPage.xaml.g.cs

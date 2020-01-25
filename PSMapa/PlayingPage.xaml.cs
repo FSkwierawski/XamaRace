@@ -138,7 +138,7 @@ namespace PSMapa
             System.Net.ServicePointManager.ServerCertificateValidationCallback = (message, cert, chain, errors) => { return true; };
             HttpClient client = new HttpClient(clientHandler);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Tokens.UserToken);
-            Uri uri = new Uri("https://10.0.2.2:44353/v1/RaceResults");
+            Uri uri = new Uri("https://xamaracing.azurewebsites.net//v1/RaceResults");
 
             var content = JsonConvert.SerializeObject(raceresult);
             var data = new StringContent(content, Encoding.UTF8, "application/json");

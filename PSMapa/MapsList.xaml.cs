@@ -45,7 +45,7 @@ namespace PSMapa
             HttpClient client = new HttpClient(clientHandler);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Tokens.UserToken);
 
-            Uri Racemap = new Uri("https://10.0.2.2:44353/v1/RaceMaps/");
+            Uri Racemap = new Uri("https://xamaracing.azurewebsites.net/v1/RaceMaps/");
             content = client.GetStringAsync(Racemap).Result;
             jsonlist = JsonConvert.DeserializeObject<List<RaceMapBindingModelWithID>>(content);
         }
@@ -93,11 +93,6 @@ namespace PSMapa
                     Label IDlabel = new Label();
                     IDlabel.SetBinding(Label.TextProperty,
                         new Binding("IdValue", BindingMode.OneWay, null, null, "Id number: {0}"));
-
-                    //Label descriptionlabel = new Label();
-                    //descriptionlabel.SetBinding(Label.TextProperty,
-                    //    new Binding("Description", BindingMode.OneWay,
-                    //        null, null, "Born {0:d}"));
 
                     BoxView boxView = new BoxView();
                     boxView.SetBinding(BoxView.ColorProperty, "FavoriteColor");

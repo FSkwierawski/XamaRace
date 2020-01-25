@@ -33,7 +33,7 @@ namespace PSMapa
             System.Net.ServicePointManager.ServerCertificateValidationCallback = (message, cert, chain, errors) => { return true; };
             HttpClient client = new HttpClient(clientHandler);
 
-            Uri uriaddress = new Uri("https://10.0.2.2:44353/v1/Accounts/Authenticate");
+            Uri uriaddress = new Uri("https://xamaracing.azurewebsites.net/v1/Accounts/Authenticate");
             var content = JsonConvert.SerializeObject(user);
             var data = new StringContent(content, Encoding.UTF8, "application/json");
             var response = await client.PostAsync(uriaddress, data);

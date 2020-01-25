@@ -40,7 +40,7 @@ namespace PSMapa.ViewModels
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
             HttpClient client = new HttpClient(clientHandler);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Tokens.UserToken);
-            Uri FirstRaceMapsURI = new Uri("https://10.0.2.2:44353/v1/RaceMaps/");
+            Uri FirstRaceMapsURI = new Uri("https://xamaracing.azurewebsites.net/v1/RaceMaps/");
             Uri ConcatRaceMapsURI = new Uri(FirstRaceMapsURI, id);
             var content = await client.GetStringAsync(ConcatRaceMapsURI);
             RaceMap = JsonConvert.DeserializeObject<RaceMapBindingModel>(content);

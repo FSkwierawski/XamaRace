@@ -12,7 +12,7 @@
             <StackLayout VerticalOptions="CenterAndExpand">
                 <Button Text="play" BackgroundColor="Blue" Clicked="PlayingPage_Clicked"  />
                 <Button Text="create map" BackgroundColor="Blue" Clicked="MapCreationPage_Clicked" />
-                <Button Text="ranking" BackgroundColor="Blue" />
+                <Button Text="ranking" BackgroundColor="Blue" Clicked="Ranking_Clicked" />
                 <Button Text="LogOut" BackgroundColor="blue" Clicked="Logout_Clicked" />
 
             </StackLayout>

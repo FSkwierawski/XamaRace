@@ -33,5 +33,15 @@ namespace PSMapa
         {
             Navigation.PushAsync(new PlayingPage());
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ranking_Clicked(object sender, EventArgs e)
+        {
+             Navigation.PushAsync(new RankingPage());
+        }
     }
 }

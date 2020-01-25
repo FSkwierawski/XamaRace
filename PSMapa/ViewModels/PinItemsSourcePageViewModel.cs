@@ -72,7 +72,7 @@ namespace WorkingWithMaps.ViewModels
             raceMap.Description = "TestOpis";
             raceMap.RaceCheckpoints = CheckPoints;
             System.Net.ServicePointManager.ServerCertificateValidationCallback = (message, cert, chain, errors) => { return true; };
-            var url = "https://10.0.2.2:44353/v1/RaceMaps";
+            var url = "https://xamaracing.azurewebsites.net/v1/RaceMaps";
             var JSONcontent = JsonConvert.SerializeObject(raceMap);
             var data = new StringContent(JSONcontent, Encoding.UTF8, "application/json");
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Tokens.UserToken);
